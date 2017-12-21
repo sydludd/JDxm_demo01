@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.weicy.weicy_gw">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- Manifest.permission.CAMERA -->
+    <!-- Manifest.permission.READ_EXTERNAL_STORAGE -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <application
+        android:name=".chushihua.MApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher_background"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.JinRuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.XinxiaActivity" />
+        <activity android:name=".activity.SouSuo" />
+        <activity android:name=".adapter.Web" />
+        <activity android:name=".activity.ZhuHuiChang" />
+        <activity android:name=".activity.ChaoShiActivity" />
+        <activity android:name=".activity.DengluActivity" />
+        <activity android:name=".activity.ZhuCeActivity" />
+        <activity android:name=".activity.CustomXiangQiangActivity" />
+        <activity android:name=".adapter.XiangQing" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".activity.Activity01" />
+        <activity android:name=".activity.Activity02"></activity>
+    </application>
+
+</manifest>
